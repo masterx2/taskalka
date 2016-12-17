@@ -12,12 +12,14 @@
 <body>
 
     <div id="bar">
-        <span id="login-name">{$content.user->login}</span>
-        {if $content.user}
-            <a href="/account/logout">logout</a>
-        {else}
-            <a href="/account/login">login</a> or <a href="/account/register">register</a>
-        {/if}
+        <div id="account">
+            {if $content.user}
+                <span id="login-name">{$content.user->login} ({$content.user->email})</span>
+                <a href="/account/logout">logout</a>
+            {else}
+                <a href="/account/login">login</a> or <a href="/account/register">register</a>
+            {/if}
+        </div>
     </div>
     {block 'content'}
         no content

@@ -29,8 +29,12 @@ input {
     top: 0;
     left: 0;
     right: 0;
-    height: 30px;
+    height: 35px;
     background: #c1c1c1;
-    padding: 4px;
+    padding: 5px 15px;
     box-sizing: border-box;
+}
+
+#account {
+    float: right;
 }
