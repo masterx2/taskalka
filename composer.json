@@ -1,0 +1,18 @@
+{
+    "name": "net/taskalka",
+    "type": "project",
+    "license": "GNU",
+    "minimum-stability": "dev",
+    "require": {
+        "mongodb/mongodb": "^1.1",
+        "pimple/pimple": "^3.0",
+        "monolog/monolog": "^1.22",
+        "fenom/fenom": "^2.11",
+        "symfony/http-foundation": "^3.2"
+    },
+    "autoload": {
+        "psr-0": {
+            "Taskalka": "src"
+        }
+    }
+}
